@@ -60,6 +60,11 @@
 
 - (void)initContent {
   tabBarViewController = [[MDTabBarViewController alloc] initWithDelegate:self];
+  tabBarViewController.tabBar.height = 100;
+  tabBarViewController.tabBar.indicatorHeight = 10;
+  //tabBarViewController.scrollEnabled = YES;
+    tabBarViewController.shadowsEnabled = YES;
+    
   NSArray *names = @[
     @"TAB ONE",
     @"TWO",

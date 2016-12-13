@@ -9,60 +9,21 @@
 /* Begin PBXBuildFile section */
 		921085601DAF9FFF005BECA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9210855F1DAF9FFF005BECA4 /* main.m */; };
 		921085631DAF9FFF005BECA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085621DAF9FFF005BECA4 /* AppDelegate.m */; };
-		921085661DAF9FFF005BECA4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085651DAF9FFF005BECA4 /* MasterViewController.m */; };
 		9210856C1DAF9FFF005BECA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9210856A1DAF9FFF005BECA4 /* Main.storyboard */; };
 		9210856E1DAF9FFF005BECA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9210856D1DAF9FFF005BECA4 /* Assets.xcassets */; };
 		921085711DAF9FFF005BECA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9210856F1DAF9FFF005BECA4 /* LaunchScreen.storyboard */; };
 		921085B71DAFA197005BECA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9210857A1DAFA197005BECA4 /* LaunchScreen.storyboard */; };
 		921085B81DAFA197005BECA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9210857C1DAFA197005BECA4 /* Main.storyboard */; };
 		921085B91DAFA197005BECA4 /* Main.storyboard__ in Resources */ = {isa = PBXBuildFile; fileRef = 9210857E1DAFA197005BECA4 /* Main.storyboard__ */; };
-		921085BA1DAFA197005BECA4 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085811DAFA197005BECA4 /* ButtonViewController.m */; };
-		921085BB1DAFA197005BECA4 /* ButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085821DAFA197005BECA4 /* ButtonViewController.xib */; };
-		921085BC1DAFA197005BECA4 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085831DAFA197005BECA4 /* CollectionViewCell.xib */; };
-		921085BD1DAFA197005BECA4 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085851DAFA197005BECA4 /* CollectionViewController.m */; };
-		921085BE1DAFA197005BECA4 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085861DAFA197005BECA4 /* CollectionViewController.xib */; };
-		921085BF1DAFA197005BECA4 /* DatePickerDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085881DAFA197005BECA4 /* DatePickerDialogController.m */; };
-		921085C01DAFA197005BECA4 /* DatePickerDialogController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085891DAFA197005BECA4 /* DatePickerDialogController.xib */; };
-		921085C11DAFA197005BECA4 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9210858B1DAFA197005BECA4 /* DatePickerViewController.m */; };
-		921085C21DAFA197005BECA4 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9210858C1DAFA197005BECA4 /* DatePickerViewController.xib */; };
-		921085C31DAFA197005BECA4 /* FullWidthTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9210858E1DAFA197005BECA4 /* FullWidthTextFieldViewController.m */; };
-		921085C41DAFA197005BECA4 /* FullWidthTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9210858F1DAFA197005BECA4 /* FullWidthTextFieldViewController.xib */; };
 		921085C51DAFA197005BECA4 /* MockData.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085911DAFA197005BECA4 /* MockData.m */; };
-		921085C61DAFA197005BECA4 /* NormalTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085931DAFA197005BECA4 /* NormalTextFieldViewController.m */; };
-		921085C71DAFA197005BECA4 /* NormalTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085941DAFA197005BECA4 /* NormalTextFieldViewController.xib */; };
-		921085C81DAFA197005BECA4 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085961DAFA197005BECA4 /* ProgressViewController.m */; };
-		921085C91DAFA197005BECA4 /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085971DAFA197005BECA4 /* ProgressViewController.xib */; };
-		921085CA1DAFA197005BECA4 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085991DAFA197005BECA4 /* SliderViewController.m */; };
-		921085CB1DAFA197005BECA4 /* SliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9210859A1DAFA197005BECA4 /* SliderViewController.xib */; };
-		921085CC1DAFA197005BECA4 /* SnackBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9210859C1DAFA197005BECA4 /* SnackBarViewController.m */; };
-		921085CD1DAFA197005BECA4 /* SnackBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9210859D1DAFA197005BECA4 /* SnackBarViewController.xib */; };
-		921085CE1DAFA197005BECA4 /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9210859F1DAFA197005BECA4 /* SwitchViewController.m */; };
-		921085CF1DAFA197005BECA4 /* SwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085A01DAFA197005BECA4 /* SwitchViewController.xib */; };
 		921085D01DAFA197005BECA4 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085A21DAFA197005BECA4 /* TabBarViewController.m */; };
 		921085D11DAFA197005BECA4 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085A31DAFA197005BECA4 /* TabBarViewController.xib */; };
 		921085D21DAFA197005BECA4 /* TabBarViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085A51DAFA197005BECA4 /* TabBarViewControllerViewController.m */; };
 		921085D31DAFA197005BECA4 /* TabBarViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085A61DAFA197005BECA4 /* TabBarViewControllerViewController.xib */; };
-		921085D41DAFA197005BECA4 /* TabContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085A81DAFA197005BECA4 /* TabContentViewController.m */; };
-		921085D51DAFA197005BECA4 /* TabContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085A91DAFA197005BECA4 /* TabContentViewController.xib */; };
-		921085D61DAFA197005BECA4 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085AB1DAFA197005BECA4 /* TableViewController.m */; };
-		921085D71DAFA197005BECA4 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085AC1DAFA197005BECA4 /* TableViewController.xib */; };
-		921085D81DAFA197005BECA4 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085AE1DAFA197005BECA4 /* TextFieldViewController.m */; };
-		921085D91DAFA197005BECA4 /* TextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085AF1DAFA197005BECA4 /* TextFieldViewController.xib */; };
-		921085DA1DAFA197005BECA4 /* TimePickerDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085B11DAFA197005BECA4 /* TimePickerDialogViewController.m */; };
-		921085DB1DAFA197005BECA4 /* TimePickerDialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085B21DAFA197005BECA4 /* TimePickerDialogViewController.xib */; };
-		921085DC1DAFA197005BECA4 /* ToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921085B41DAFA197005BECA4 /* ToastViewController.m */; };
-		921085DD1DAFA197005BECA4 /* ToastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921085B51DAFA197005BECA4 /* ToastViewController.xib */; };
 		925466011DAFC43400D4E20D /* libMaterialControls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 921085DF1DAFA1F8005BECA4 /* libMaterialControls.a */; };
-		92B2BC731DB0841C00986B23 /* TestProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2BC711DB0841C00986B23 /* TestProgressViewController.m */; };
-		92B2BC741DB0841C00986B23 /* TestProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B2BC721DB0841C00986B23 /* TestProgressViewController.xib */; };
-		92EFF6011DB475A000C27C2B /* FloatingActionButtonFlingingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EFF5F61DB475A000C27C2B /* FloatingActionButtonFlingingViewController.m */; };
-		92EFF6021DB475A000C27C2B /* FloatingActionButtonFlingingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92EFF5F71DB475A000C27C2B /* FloatingActionButtonFlingingViewController.xib */; };
-		92EFF6031DB475A000C27C2B /* FloatingButtonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EFF5F91DB475A000C27C2B /* FloatingButtonTableViewController.m */; };
-		92EFF6041DB475A000C27C2B /* FloatingButtonTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92EFF5FA1DB475A000C27C2B /* FloatingButtonTableViewController.xib */; };
-		92EFF6051DB475A000C27C2B /* FloatingButtonToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EFF5FC1DB475A000C27C2B /* FloatingButtonToolbarViewController.m */; };
-		92EFF6061DB475A000C27C2B /* FloatingButtonToolbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92EFF5FD1DB475A000C27C2B /* FloatingButtonToolbarViewController.xib */; };
-		92EFF6071DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EFF5FF1DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.m */; };
-		92EFF6081DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92EFF6001DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.xib */; };
+		B3560D911E005A3F003E8534 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3560D901E005A3F003E8534 /* MasterViewController.m */; };
+		B3560D951E005AD6003E8534 /* TabContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3560D931E005AD6003E8534 /* TabContentViewController.m */; };
+		B3560D961E005AD6003E8534 /* TabContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3560D941E005AD6003E8534 /* TabContentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +32,6 @@
 		921085611DAF9FFF005BECA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		921085621DAF9FFF005BECA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		921085641DAF9FFF005BECA4 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		921085651DAF9FFF005BECA4 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		9210856B1DAF9FFF005BECA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9210856D1DAF9FFF005BECA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		921085701DAF9FFF005BECA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,76 +39,19 @@
 		9210857B1DAFA197005BECA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9210857D1DAFA197005BECA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		9210857F1DAFA197005BECA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Main.storyboard__; sourceTree = "<group>"; };
-		921085801DAFA197005BECA4 /* ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
-		921085811DAFA197005BECA4 /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
-		921085821DAFA197005BECA4 /* ButtonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonViewController.xib; sourceTree = "<group>"; };
-		921085831DAFA197005BECA4 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		921085841DAFA197005BECA4 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
-		921085851DAFA197005BECA4 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
-		921085861DAFA197005BECA4 /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
-		921085871DAFA197005BECA4 /* DatePickerDialogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerDialogController.h; sourceTree = "<group>"; };
-		921085881DAFA197005BECA4 /* DatePickerDialogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerDialogController.m; sourceTree = "<group>"; };
-		921085891DAFA197005BECA4 /* DatePickerDialogController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerDialogController.xib; sourceTree = "<group>"; };
-		9210858A1DAFA197005BECA4 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
-		9210858B1DAFA197005BECA4 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
-		9210858C1DAFA197005BECA4 /* DatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
-		9210858D1DAFA197005BECA4 /* FullWidthTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullWidthTextFieldViewController.h; sourceTree = "<group>"; };
-		9210858E1DAFA197005BECA4 /* FullWidthTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullWidthTextFieldViewController.m; sourceTree = "<group>"; };
-		9210858F1DAFA197005BECA4 /* FullWidthTextFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullWidthTextFieldViewController.xib; sourceTree = "<group>"; };
 		921085901DAFA197005BECA4 /* MockData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockData.h; sourceTree = "<group>"; };
 		921085911DAFA197005BECA4 /* MockData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockData.m; sourceTree = "<group>"; };
-		921085921DAFA197005BECA4 /* NormalTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTextFieldViewController.h; sourceTree = "<group>"; };
-		921085931DAFA197005BECA4 /* NormalTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTextFieldViewController.m; sourceTree = "<group>"; };
-		921085941DAFA197005BECA4 /* NormalTextFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalTextFieldViewController.xib; sourceTree = "<group>"; };
-		921085951DAFA197005BECA4 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
-		921085961DAFA197005BECA4 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
-		921085971DAFA197005BECA4 /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
-		921085981DAFA197005BECA4 /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
-		921085991DAFA197005BECA4 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
-		9210859A1DAFA197005BECA4 /* SliderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderViewController.xib; sourceTree = "<group>"; };
-		9210859B1DAFA197005BECA4 /* SnackBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnackBarViewController.h; sourceTree = "<group>"; };
-		9210859C1DAFA197005BECA4 /* SnackBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnackBarViewController.m; sourceTree = "<group>"; };
-		9210859D1DAFA197005BECA4 /* SnackBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SnackBarViewController.xib; sourceTree = "<group>"; };
-		9210859E1DAFA197005BECA4 /* SwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
-		9210859F1DAFA197005BECA4 /* SwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
-		921085A01DAFA197005BECA4 /* SwitchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchViewController.xib; sourceTree = "<group>"; };
 		921085A11DAFA197005BECA4 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		921085A21DAFA197005BECA4 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		921085A31DAFA197005BECA4 /* TabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
 		921085A41DAFA197005BECA4 /* TabBarViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewControllerViewController.h; sourceTree = "<group>"; };
 		921085A51DAFA197005BECA4 /* TabBarViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewControllerViewController.m; sourceTree = "<group>"; };
 		921085A61DAFA197005BECA4 /* TabBarViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarViewControllerViewController.xib; sourceTree = "<group>"; };
-		921085A71DAFA197005BECA4 /* TabContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabContentViewController.h; sourceTree = "<group>"; };
-		921085A81DAFA197005BECA4 /* TabContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabContentViewController.m; sourceTree = "<group>"; };
-		921085A91DAFA197005BECA4 /* TabContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabContentViewController.xib; sourceTree = "<group>"; };
-		921085AA1DAFA197005BECA4 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		921085AB1DAFA197005BECA4 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		921085AC1DAFA197005BECA4 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
-		921085AD1DAFA197005BECA4 /* TextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
-		921085AE1DAFA197005BECA4 /* TextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
-		921085AF1DAFA197005BECA4 /* TextFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldViewController.xib; sourceTree = "<group>"; };
-		921085B01DAFA197005BECA4 /* TimePickerDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimePickerDialogViewController.h; sourceTree = "<group>"; };
-		921085B11DAFA197005BECA4 /* TimePickerDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimePickerDialogViewController.m; sourceTree = "<group>"; };
-		921085B21DAFA197005BECA4 /* TimePickerDialogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimePickerDialogViewController.xib; sourceTree = "<group>"; };
-		921085B31DAFA197005BECA4 /* ToastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastViewController.h; sourceTree = "<group>"; };
-		921085B41DAFA197005BECA4 /* ToastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastViewController.m; sourceTree = "<group>"; };
-		921085B51DAFA197005BECA4 /* ToastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastViewController.xib; sourceTree = "<group>"; };
 		921085DF1DAFA1F8005BECA4 /* libMaterialControls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMaterialControls.a; path = "../../../../../../Users/bachpx1/Library/Developer/Xcode/DerivedData/MaterialControls-aqppaxtvkaixhvaiqejqhjnlmrgg/Build/Products/Debug-iphonesimulator/libMaterialControls.a"; sourceTree = "<group>"; };
-		92B2BC701DB0841C00986B23 /* TestProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProgressViewController.h; sourceTree = "<group>"; };
-		92B2BC711DB0841C00986B23 /* TestProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProgressViewController.m; sourceTree = "<group>"; };
-		92B2BC721DB0841C00986B23 /* TestProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestProgressViewController.xib; sourceTree = "<group>"; };
-		92EFF5F51DB475A000C27C2B /* FloatingActionButtonFlingingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingActionButtonFlingingViewController.h; sourceTree = "<group>"; };
-		92EFF5F61DB475A000C27C2B /* FloatingActionButtonFlingingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingActionButtonFlingingViewController.m; sourceTree = "<group>"; };
-		92EFF5F71DB475A000C27C2B /* FloatingActionButtonFlingingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingActionButtonFlingingViewController.xib; sourceTree = "<group>"; };
-		92EFF5F81DB475A000C27C2B /* FloatingButtonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingButtonTableViewController.h; sourceTree = "<group>"; };
-		92EFF5F91DB475A000C27C2B /* FloatingButtonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingButtonTableViewController.m; sourceTree = "<group>"; };
-		92EFF5FA1DB475A000C27C2B /* FloatingButtonTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingButtonTableViewController.xib; sourceTree = "<group>"; };
-		92EFF5FB1DB475A000C27C2B /* FloatingButtonToolbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingButtonToolbarViewController.h; sourceTree = "<group>"; };
-		92EFF5FC1DB475A000C27C2B /* FloatingButtonToolbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingButtonToolbarViewController.m; sourceTree = "<group>"; };
-		92EFF5FD1DB475A000C27C2B /* FloatingButtonToolbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingButtonToolbarViewController.xib; sourceTree = "<group>"; };
-		92EFF5FE1DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingButtonTranformingSheetViewController.h; sourceTree = "<group>"; };
-		92EFF5FF1DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingButtonTranformingSheetViewController.m; sourceTree = "<group>"; };
-		92EFF6001DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingButtonTranformingSheetViewController.xib; sourceTree = "<group>"; };
+		B3560D901E005A3F003E8534 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		B3560D921E005AD6003E8534 /* TabContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabContentViewController.h; sourceTree = "<group>"; };
+		B3560D931E005AD6003E8534 /* TabContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabContentViewController.m; sourceTree = "<group>"; };
+		B3560D941E005AD6003E8534 /* TabContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabContentViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,81 +90,23 @@
 				921085621DAF9FFF005BECA4 /* AppDelegate.m */,
 				9210856D1DAF9FFF005BECA4 /* Assets.xcassets */,
 				921085791DAFA197005BECA4 /* Base.lproj */,
-				921085801DAFA197005BECA4 /* ButtonViewController.h */,
-				921085811DAFA197005BECA4 /* ButtonViewController.m */,
-				921085821DAFA197005BECA4 /* ButtonViewController.xib */,
-				921085831DAFA197005BECA4 /* CollectionViewCell.xib */,
-				921085841DAFA197005BECA4 /* CollectionViewController.h */,
-				921085851DAFA197005BECA4 /* CollectionViewController.m */,
-				921085861DAFA197005BECA4 /* CollectionViewController.xib */,
-				921085871DAFA197005BECA4 /* DatePickerDialogController.h */,
-				921085881DAFA197005BECA4 /* DatePickerDialogController.m */,
-				921085891DAFA197005BECA4 /* DatePickerDialogController.xib */,
-				9210858A1DAFA197005BECA4 /* DatePickerViewController.h */,
-				9210858B1DAFA197005BECA4 /* DatePickerViewController.m */,
-				9210858C1DAFA197005BECA4 /* DatePickerViewController.xib */,
-				92EFF5F51DB475A000C27C2B /* FloatingActionButtonFlingingViewController.h */,
-				92EFF5F61DB475A000C27C2B /* FloatingActionButtonFlingingViewController.m */,
-				92EFF5F71DB475A000C27C2B /* FloatingActionButtonFlingingViewController.xib */,
-				92EFF5F81DB475A000C27C2B /* FloatingButtonTableViewController.h */,
-				92EFF5F91DB475A000C27C2B /* FloatingButtonTableViewController.m */,
-				92EFF5FA1DB475A000C27C2B /* FloatingButtonTableViewController.xib */,
-				92EFF5FB1DB475A000C27C2B /* FloatingButtonToolbarViewController.h */,
-				92EFF5FC1DB475A000C27C2B /* FloatingButtonToolbarViewController.m */,
-				92EFF5FD1DB475A000C27C2B /* FloatingButtonToolbarViewController.xib */,
-				92EFF5FE1DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.h */,
-				92EFF5FF1DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.m */,
-				92EFF6001DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.xib */,
-				9210858D1DAFA197005BECA4 /* FullWidthTextFieldViewController.h */,
-				9210858E1DAFA197005BECA4 /* FullWidthTextFieldViewController.m */,
-				9210858F1DAFA197005BECA4 /* FullWidthTextFieldViewController.xib */,
 				921085721DAF9FFF005BECA4 /* Info.plist */,
 				9210856F1DAF9FFF005BECA4 /* LaunchScreen.storyboard */,
 				9210856A1DAF9FFF005BECA4 /* Main.storyboard */,
 				921085641DAF9FFF005BECA4 /* MasterViewController.h */,
-				921085651DAF9FFF005BECA4 /* MasterViewController.m */,
+				B3560D901E005A3F003E8534 /* MasterViewController.m */,
 				921085901DAFA197005BECA4 /* MockData.h */,
 				921085911DAFA197005BECA4 /* MockData.m */,
-				921085921DAFA197005BECA4 /* NormalTextFieldViewController.h */,
-				921085931DAFA197005BECA4 /* NormalTextFieldViewController.m */,
-				921085941DAFA197005BECA4 /* NormalTextFieldViewController.xib */,
-				921085951DAFA197005BECA4 /* ProgressViewController.h */,
-				921085961DAFA197005BECA4 /* ProgressViewController.m */,
-				921085971DAFA197005BECA4 /* ProgressViewController.xib */,
-				921085981DAFA197005BECA4 /* SliderViewController.h */,
-				921085991DAFA197005BECA4 /* SliderViewController.m */,
-				9210859A1DAFA197005BECA4 /* SliderViewController.xib */,
-				9210859B1DAFA197005BECA4 /* SnackBarViewController.h */,
-				9210859C1DAFA197005BECA4 /* SnackBarViewController.m */,
-				9210859D1DAFA197005BECA4 /* SnackBarViewController.xib */,
 				9210855E1DAF9FFF005BECA4 /* Supporting Files */,
-				9210859E1DAFA197005BECA4 /* SwitchViewController.h */,
-				9210859F1DAFA197005BECA4 /* SwitchViewController.m */,
-				921085A01DAFA197005BECA4 /* SwitchViewController.xib */,
 				921085A11DAFA197005BECA4 /* TabBarViewController.h */,
 				921085A21DAFA197005BECA4 /* TabBarViewController.m */,
 				921085A31DAFA197005BECA4 /* TabBarViewController.xib */,
 				921085A41DAFA197005BECA4 /* TabBarViewControllerViewController.h */,
 				921085A51DAFA197005BECA4 /* TabBarViewControllerViewController.m */,
 				921085A61DAFA197005BECA4 /* TabBarViewControllerViewController.xib */,
-				921085A71DAFA197005BECA4 /* TabContentViewController.h */,
-				921085A81DAFA197005BECA4 /* TabContentViewController.m */,
-				921085A91DAFA197005BECA4 /* TabContentViewController.xib */,
-				921085AA1DAFA197005BECA4 /* TableViewController.h */,
-				921085AB1DAFA197005BECA4 /* TableViewController.m */,
-				921085AC1DAFA197005BECA4 /* TableViewController.xib */,
-				92B2BC701DB0841C00986B23 /* TestProgressViewController.h */,
-				92B2BC711DB0841C00986B23 /* TestProgressViewController.m */,
-				92B2BC721DB0841C00986B23 /* TestProgressViewController.xib */,
-				921085AD1DAFA197005BECA4 /* TextFieldViewController.h */,
-				921085AE1DAFA197005BECA4 /* TextFieldViewController.m */,
-				921085AF1DAFA197005BECA4 /* TextFieldViewController.xib */,
-				921085B01DAFA197005BECA4 /* TimePickerDialogViewController.h */,
-				921085B11DAFA197005BECA4 /* TimePickerDialogViewController.m */,
-				921085B21DAFA197005BECA4 /* TimePickerDialogViewController.xib */,
-				921085B31DAFA197005BECA4 /* ToastViewController.h */,
-				921085B41DAFA197005BECA4 /* ToastViewController.m */,
-				921085B51DAFA197005BECA4 /* ToastViewController.xib */,
+				B3560D921E005AD6003E8534 /* TabContentViewController.h */,
+				B3560D931E005AD6003E8534 /* TabContentViewController.m */,
+				B3560D941E005AD6003E8534 /* TabContentViewController.xib */,
 			);
 			path = MaterialControls.Sample;
 			sourceTree = "<group>";
@@ -351,35 +196,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				921085C21DAFA197005BECA4 /* DatePickerViewController.xib in Resources */,
 				921085D31DAFA197005BECA4 /* TabBarViewControllerViewController.xib in Resources */,
 				921085B91DAFA197005BECA4 /* Main.storyboard__ in Resources */,
-				921085C41DAFA197005BECA4 /* FullWidthTextFieldViewController.xib in Resources */,
+				B3560D961E005AD6003E8534 /* TabContentViewController.xib in Resources */,
 				921085D11DAFA197005BECA4 /* TabBarViewController.xib in Resources */,
 				921085711DAF9FFF005BECA4 /* LaunchScreen.storyboard in Resources */,
 				9210856E1DAF9FFF005BECA4 /* Assets.xcassets in Resources */,
-				921085D91DAFA197005BECA4 /* TextFieldViewController.xib in Resources */,
-				921085D51DAFA197005BECA4 /* TabContentViewController.xib in Resources */,
-				921085BB1DAFA197005BECA4 /* ButtonViewController.xib in Resources */,
-				92EFF6081DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.xib in Resources */,
-				92EFF6021DB475A000C27C2B /* FloatingActionButtonFlingingViewController.xib in Resources */,
-				921085DB1DAFA197005BECA4 /* TimePickerDialogViewController.xib in Resources */,
 				921085B81DAFA197005BECA4 /* Main.storyboard in Resources */,
-				921085C91DAFA197005BECA4 /* ProgressViewController.xib in Resources */,
-				921085C01DAFA197005BECA4 /* DatePickerDialogController.xib in Resources */,
-				921085BE1DAFA197005BECA4 /* CollectionViewController.xib in Resources */,
-				921085CB1DAFA197005BECA4 /* SliderViewController.xib in Resources */,
-				921085D71DAFA197005BECA4 /* TableViewController.xib in Resources */,
-				92EFF6041DB475A000C27C2B /* FloatingButtonTableViewController.xib in Resources */,
-				921085CF1DAFA197005BECA4 /* SwitchViewController.xib in Resources */,
 				921085B71DAFA197005BECA4 /* LaunchScreen.storyboard in Resources */,
-				921085C71DAFA197005BECA4 /* NormalTextFieldViewController.xib in Resources */,
 				9210856C1DAF9FFF005BECA4 /* Main.storyboard in Resources */,
-				92B2BC741DB0841C00986B23 /* TestProgressViewController.xib in Resources */,
-				921085BC1DAFA197005BECA4 /* CollectionViewCell.xib in Resources */,
-				921085CD1DAFA197005BECA4 /* SnackBarViewController.xib in Resources */,
-				92EFF6061DB475A000C27C2B /* FloatingButtonToolbarViewController.xib in Resources */,
-				921085DD1DAFA197005BECA4 /* ToastViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,32 +215,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				921085C31DAFA197005BECA4 /* FullWidthTextFieldViewController.m in Sources */,
-				921085BA1DAFA197005BECA4 /* ButtonViewController.m in Sources */,
-				921085DA1DAFA197005BECA4 /* TimePickerDialogViewController.m in Sources */,
-				92B2BC731DB0841C00986B23 /* TestProgressViewController.m in Sources */,
-				92EFF6051DB475A000C27C2B /* FloatingButtonToolbarViewController.m in Sources */,
-				921085CE1DAFA197005BECA4 /* SwitchViewController.m in Sources */,
-				92EFF6031DB475A000C27C2B /* FloatingButtonTableViewController.m in Sources */,
-				921085DC1DAFA197005BECA4 /* ToastViewController.m in Sources */,
-				921085C11DAFA197005BECA4 /* DatePickerViewController.m in Sources */,
-				921085C81DAFA197005BECA4 /* ProgressViewController.m in Sources */,
 				921085631DAF9FFF005BECA4 /* AppDelegate.m in Sources */,
-				921085661DAF9FFF005BECA4 /* MasterViewController.m in Sources */,
-				921085C61DAFA197005BECA4 /* NormalTextFieldViewController.m in Sources */,
-				921085D81DAFA197005BECA4 /* TextFieldViewController.m in Sources */,
-				921085CA1DAFA197005BECA4 /* SliderViewController.m in Sources */,
 				921085D21DAFA197005BECA4 /* TabBarViewControllerViewController.m in Sources */,
-				92EFF6071DB475A000C27C2B /* FloatingButtonTranformingSheetViewController.m in Sources */,
-				921085BF1DAFA197005BECA4 /* DatePickerDialogController.m in Sources */,
 				921085D01DAFA197005BECA4 /* TabBarViewController.m in Sources */,
-				921085BD1DAFA197005BECA4 /* CollectionViewController.m in Sources */,
-				921085D61DAFA197005BECA4 /* TableViewController.m in Sources */,
 				921085C51DAFA197005BECA4 /* MockData.m in Sources */,
+				B3560D911E005A3F003E8534 /* MasterViewController.m in Sources */,
 				921085601DAF9FFF005BECA4 /* main.m in Sources */,
-				921085CC1DAFA197005BECA4 /* SnackBarViewController.m in Sources */,
-				92EFF6011DB475A000C27C2B /* FloatingActionButtonFlingingViewController.m in Sources */,
-				921085D41DAFA197005BECA4 /* TabContentViewController.m in Sources */,
+				B3560D951E005AD6003E8534 /* TabContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

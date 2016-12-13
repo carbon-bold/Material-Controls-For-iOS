@@ -20,23 +20,23 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "ButtonViewController.h"
+/*#import "ButtonViewController.h"
 #import "CollectionViewController.h"
 #import "DatePickerDialogController.h"
 #import "DatePickerViewController.h"
-#import "FloatingButtonTableViewController.h"
+#import "FloatingButtonTableViewController.h"*/
 #import "MasterViewController.h"
-#import "ProgressViewController.h"
+/*#import "ProgressViewController.h"
 #import "SliderViewController.h"
 #import "SnackBarViewController.h"
-#import "SwitchViewController.h"
+#import "SwitchViewController.h"*/
 #import "TabBarViewController.h"
 #import "TabBarViewControllerViewController.h"
-#import "TableViewController.h"
+/*#import "TableViewController.h"
 #import "TextFieldViewController.h"
 #import "TimePickerDialogViewController.h"
 #import "ToastViewController.h"
-#import <MaterialControls/NSCalendarHelper.h>
+#import <MaterialControls/NSCalendarHelper.h>*/
 
 @interface MasterViewController ()
 
@@ -51,12 +51,7 @@ static NSArray *controlsName;
 + (NSArray *)controlsName {
   if (!controlsName)
     controlsName = [NSArray
-        arrayWithObjects:@"Button", @"ButtonFloating", @"TableView Cell",
-                         @"Progress Bar", @"Text Field", @"Switch",
-                         @"Date Picker", @"Date Picker Dialog",
-                         @"Collection View Cell", @"Tab Bar",
-                         @"Time Picker Dialog", @"Tab Bar View Controller",
-                         @"Snackbar", @"Toast", @"Slider", nil];
+        arrayWithObjects:@"Tab Bar", @"Tab Bar View Controller", nil];
 
   return controlsName;
 }
@@ -72,7 +67,7 @@ static NSArray *controlsName;
     [self insertRow:control];
   }
   [self.navigationController.navigationBar setTranslucent:NO];
-  [[NSCalendarHelper mdSharedCalendar] setFirstWeekday:2];
+  //[[NSCalendarHelper mdSharedCalendar] setFirstWeekday:2];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -111,7 +106,7 @@ static NSArray *controlsName;
     didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   UIViewController *controller = nil;
   NSString *row = self.controls[indexPath.row];
-  if ([row isEqualToString:@"Button"]) {
+  /*if ([row isEqualToString:@"Button"]) {
     controller = [[ButtonViewController alloc] init];
   } else if ([row isEqualToString:@"ButtonFloating"]) {
     controller = [[FloatingButtonTableViewController alloc] init];
@@ -129,19 +124,19 @@ static NSArray *controlsName;
     controller = [[DatePickerDialogController alloc] init];
   } else if ([row isEqualToString:@"Collection View Cell"]) {
     controller = [[CollectionViewController alloc] init];
-  } else if ([row isEqualToString:@"Tab Bar"]) {
+  } else*/ if ([row isEqualToString:@"Tab Bar"]) {
     controller = [[TabBarViewController alloc] init];
-  } else if ([row isEqualToString:@"Time Picker Dialog"]) {
-    controller = [[TimePickerDialogViewController alloc] init];
+  /*} else if ([row isEqualToString:@"Time Picker Dialog"]) {
+    controller = [[TimePickerDialogViewController alloc] init];*/
   } else if ([row isEqualToString:@"Tab Bar View Controller"]) {
     controller = [[TabBarViewControllerViewController alloc] init];
-  } else if ([row isEqualToString:@"Snackbar"]) {
+  } /*else if ([row isEqualToString:@"Snackbar"]) {
     controller = [[SnackBarViewController alloc] init];
   } else if ([row isEqualToString:@"Toast"]) {
     controller = [[ToastViewController alloc] init];
   } else if ([row isEqualToString:@"Slider"]) {
     controller = [[SliderViewController alloc] init];
-  }
+  }*/
 
   if (controller)
     [self.navigationController pushViewController:controller animated:YES];
