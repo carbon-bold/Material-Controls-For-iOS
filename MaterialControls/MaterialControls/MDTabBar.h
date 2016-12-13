@@ -43,6 +43,7 @@ IB_DESIGNABLE
 @property(null_unspecified, nonatomic) IBInspectable UIColor *backgroundColor;
 @property(null_unspecified, nonatomic) IBInspectable UIColor *indicatorColor;
 @property(null_unspecified, nonatomic) IBInspectable UIColor *rippleColor;
+@property(null_unspecified, nonatomic) IBInspectable UIColor *shadowColor;
 
 /// selected font
 @property(nullable, nonatomic) UIFont *textFont;
@@ -56,8 +57,14 @@ IB_DESIGNABLE
 @property(nonatomic, assign) CGFloat horizontalPaddingPerItem;
 
 @property(nonatomic) NSUInteger selectedIndex;
+@property(nonatomic) NSUInteger height;
+@property(nonatomic) NSUInteger indicatorHeight;
 @property(nonatomic, weak) id<MDTabBarDelegate> delegate;
 @property(nonatomic, readonly) NSInteger numberOfItems;
+@property(nonatomic) BOOL shadowsEnabled;
+
+- (void)addShadows;
+- (void)checkShadows:(NSUInteger)selectedIndex;
 
 - (void)setItems:(NSArray <id>*)items;
 
@@ -69,7 +76,7 @@ IB_DESIGNABLE
 
 - (NSArray <UIView*>*)tabs;
 
-- (void)moveIndicatorToFrame:(CGRect)frame withAnimated:(BOOL)animated;
+- (void)moveIndicatorToFrame:(CGRect)frame withIndex:(NSUInteger)index andAnimated:(BOOL)animated;
 
 @end
 NS_ASSUME_NONNULL_END

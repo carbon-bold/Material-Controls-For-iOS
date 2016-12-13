@@ -32,6 +32,7 @@
   NSMutableDictionary *viewControllers;
   NSUInteger lastIndex;
   BOOL disableDragging;
+  UIScrollView *scrollView;
 }
 
 - (instancetype)initWithDelegate:(id)delegate {
@@ -59,6 +60,7 @@
   // delegate scrollview
   for (UIView *v in pageController.view.subviews) {
     if ([v isKindOfClass:[UIScrollView class]]) {
+      scrollView = v;
       ((UIScrollView *)v).delegate = self;
     }
   }
@@ -83,7 +85,7 @@
   NSDictionary *viewsDictionary =
       NSDictionaryOfVariableBindings(parentView, _tabBar, pageControllerView);
 
-  NSDictionary *metricsDictionary = @{ @"tabHeight" : @kMDTabBarHeight };
+  NSDictionary *metricsDictionary = @{ @"tabHeight" : [NSNumber numberWithUnsignedInteger:_tabBar.height] };
 
   [self.view addConstraints:[NSLayoutConstraint
                                 constraintsWithVisualFormat:@"V:|-0-[_tabBar(=="
@@ -139,9 +141,25 @@
   // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    if(_tabBar.shadowsEnabled) {
+      [_tabBar addShadows];
+    }
+}
+
 #pragma Public functions
 - (void)setItems:(NSArray *)items {
   [_tabBar setItems:items];
+}
+
+- (void)setScrollEnabled:(BOOL)scrollEnabled {
+    scrollView.scrollEnabled = scrollEnabled;
+}
+
+- (void)setShadowsEnabled:(BOOL)shadowsEnabled {
+    _tabBar.shadowsEnabled = shadowsEnabled;
 }
 
 #pragma PageViewControllerDataSource
@@ -297,13 +315,18 @@
           selectedTab.frame.size.width + xDriff / scrollViewWidth * widthDiff;
 
       CGRect frame =
-          CGRectMake(newOriginX, kMDTabBarHeight - kMDIndicatorHeight, newWidth,
-                     kMDIndicatorHeight);
-      [_tabBar moveIndicatorToFrame:frame withAnimated:NO];
+          CGRectMake(newOriginX, _tabBar.height - _tabBar.indicatorHeight, newWidth,
+                     _tabBar.indicatorHeight);
+      [_tabBar moveIndicatorToFrame:frame withIndex:selectedIndex andAnimated:NO];
 
     } else {
-      if (selectedIndex + 1 >= _tabBar.numberOfItems)
+      if (selectedIndex + 1 >= _tabBar.numberOfItems) {
+          
+        if(_tabBar.shadowsEnabled) {
+          [_tabBar checkShadows:selectedIndex];
+        }
         return;
+      }
 
       UIView *rightTab = (UIView *)[_tabBar tabs][selectedIndex + 1];
 
@@ -318,9 +341,9 @@
           selectedTab.frame.size.width + xDriff / scrollViewWidth * widthDiff;
 
       CGRect frame =
-          CGRectMake(newOriginX, kMDTabBarHeight - kMDIndicatorHeight, newWidth,
-                     kMDIndicatorHeight);
-      [_tabBar moveIndicatorToFrame:frame withAnimated:NO];
+          CGRectMake(newOriginX, _tabBar.height - _tabBar.indicatorHeight, newWidth,
+                   _tabBar.indicatorHeight);
+      [_tabBar moveIndicatorToFrame:frame withIndex:selectedIndex andAnimated:NO];
     }
   }
 }

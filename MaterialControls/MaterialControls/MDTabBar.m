@@ -28,6 +28,8 @@
 #import <Foundation/Foundation.h>
 #import "UIFontHelper.h"
 
+#define kMDShadowWidth 40
+
 #pragma mark - MDTabBar
 
 @interface MDTabBar ()
@@ -57,16 +59,15 @@
   if (self = [super init]) {
     _tabs = [NSMutableArray array];
     indicatorView = [[UIView alloc]
-        initWithFrame:CGRectMake(0, kMDTabBarHeight - kMDIndicatorHeight, 0,
-                                 kMDIndicatorHeight)];
+        initWithFrame:CGRectMake(0, bar.height - bar.indicatorHeight, 0,
+                                 bar.indicatorHeight)];
     indicatorView.tag = NSIntegerMax;
     [self addSubview:indicatorView];
     [self addTarget:self
                   action:@selector(selectionChanged:)
         forControlEvents:UIControlEventValueChanged];
     tabBar = bar;
-      
-  }
+}
 
   return self;
 }
@@ -213,13 +214,13 @@
                      animations:^{
                        indicatorView.frame =
                            CGRectMake(frame.origin.x, self.bounds.size.height -
-                                                          kMDIndicatorHeight,
-                                      frame.size.width, kMDIndicatorHeight);
+                                                          tabBar.indicatorHeight,
+                                      frame.size.width, tabBar.indicatorHeight);
                      }];
   } else {
     indicatorView.frame =
-        CGRectMake(frame.origin.x, self.bounds.size.height - kMDIndicatorHeight,
-                   frame.size.width, kMDIndicatorHeight);
+        CGRectMake(frame.origin.x, self.bounds.size.height - tabBar.indicatorHeight,
+                   frame.size.width, tabBar.indicatorHeight);
   }
 }
 
@@ -266,7 +267,7 @@
     }
   }
 
-  self.frame = CGRectMake(0, 0, segmentedControlWidth, kMDTabBarHeight);
+  self.frame = CGRectMake(0, 0, segmentedControlWidth, tabBar.height);
 }
 
 - (NSArray *)getSegmentList {
@@ -401,11 +402,13 @@
 @implementation MDTabBar {
   MDSegmentedControl *segmentedControl;
   UIScrollView *scrollView;
+  CAGradientLayer *shadowLeft;
+  CAGradientLayer *shadowRight;
 }
 
 - (instancetype)init {
   if (self = [super init]) {
-    //    [self initContent];
+    //[self initContent];
   }
   return self;
 }
@@ -436,7 +439,7 @@
 
 - (void)layoutSubviews {
   [super layoutSubviews];
-  scrollView.frame = CGRectMake(0, 0, self.bounds.size.width, kMDTabBarHeight);
+  scrollView.frame = CGRectMake(0, 0, self.bounds.size.width, _height);
   [scrollView setContentInset:UIEdgeInsetsMake(0, self.horizontalInset, 0,
                                                self.horizontalInset)];
   [scrollView setContentSize:segmentedControl.bounds.size];
@@ -444,6 +447,8 @@
 
 #pragma mark Private methods
 - (void)initContent {
+  self.height = kMDTabBarHeight;
+  self.indicatorHeight = kMDIndicatorHeight;
   self.horizontalInset = 8;
 
   segmentedControl = [[MDSegmentedControl alloc] initWithTabBar:self];
@@ -471,6 +476,44 @@
   [self setTextFont:[UIFontHelper robotoFontWithName:@"roboto-medium" size:14]];
   [self setIndicatorColor:[UIColor whiteColor]];
   [self setRippleColor:[UIColor whiteColor]];
+  [self setShadowColor:[UIColor colorWithWhite:0.0f alpha:0.5f]];
+}
+
+- (void)addShadows {
+    shadowLeft = [CAGradientLayer layer];
+    shadowLeft.frame = CGRectMake(0, 0, kMDShadowWidth, self.bounds.size.height);
+    shadowLeft.colors = @[(id)self.shadowColor.CGColor, (id)[UIColor clearColor].CGColor];
+    shadowLeft.startPoint = CGPointMake(0.0, 0.5);
+    shadowLeft.endPoint = CGPointMake(1.0, 0.5);
+    //[self.layer addSublayer:shadowLeft];
+    
+    shadowRight = [CAGradientLayer layer];
+    shadowRight.frame = CGRectMake(self.bounds.size.width - kMDShadowWidth, 0, kMDShadowWidth, self.bounds.size.height);
+    shadowRight.colors = @[(id)self.shadowColor.CGColor, (id)[UIColor clearColor].CGColor];
+    shadowRight.startPoint = CGPointMake(1.0, 0.5);
+    shadowRight.endPoint = CGPointMake(0.0, 0.5);
+    [self.layer addSublayer:shadowRight];
+}
+
+- (void)checkShadows:(NSUInteger)selectedIndex {
+
+    if(!_shadowsEnabled) {
+        return;
+    }
+    
+    // If first tab is selected hide left shadow
+    if(selectedIndex == 0) {
+        [shadowLeft removeFromSuperlayer];
+    } else if(!shadowLeft.superlayer) {
+        [self.layer addSublayer:shadowLeft];
+    }
+    
+    // If second tab is selected hide right shadow
+    if(selectedIndex == self.numberOfItems-1) {
+        [shadowRight removeFromSuperlayer];
+    } else if(!shadowRight.superlayer) {
+        [self.layer addSublayer:shadowRight];
+    }
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
@@ -523,6 +566,7 @@
 
 - (void)updateSelectedIndex:(NSInteger)selectedIndex {
   _selectedIndex = selectedIndex;
+  [self checkShadows:_selectedIndex];
   [self scrollToSelectedIndex];
   if (_delegate) {
     [_delegate tabBar:self didChangeSelectedIndex:_selectedIndex];
@@ -565,7 +609,8 @@
   }
 }
 
-- (void)moveIndicatorToFrame:(CGRect)frame withAnimated:(BOOL)animated {
+- (void)moveIndicatorToFrame:(CGRect)frame withIndex:(NSUInteger)index andAnimated:(BOOL)animated {
+  [self checkShadows:index];
   [segmentedControl moveIndicatorToFrame:frame withAnimated:animated];
 }
 

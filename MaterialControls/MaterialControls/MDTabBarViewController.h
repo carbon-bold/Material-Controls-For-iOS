@@ -42,9 +42,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly) MDTabBar *tabBar;
 @property(nonatomic, weak) id<MDTabBarViewControllerDelegate> delegate;
 @property(nonatomic) NSUInteger selectedIndex;
+@property(nonatomic) BOOL shadowsEnabled;
+@property(nonatomic) BOOL scrollEnabled;
 
 - (instancetype)initWithDelegate:(id<MDTabBarViewControllerDelegate>)delegate;
 - (void)setItems:(NSArray<id> *)items;
+- (void)setSelectedIndex:(NSUInteger)selectedIndex;
 
 @end
 NS_ASSUME_NONNULL_END
