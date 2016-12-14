@@ -480,6 +480,11 @@
 }
 
 - (void)addShadows {
+    
+    if(self.numberOfItems == 1) {
+        return;
+    }
+    
     shadowLeft = [CAGradientLayer layer];
     shadowLeft.frame = CGRectMake(0, 0, kMDShadowWidth, self.bounds.size.height);
     shadowLeft.colors = @[(id)self.shadowColor.CGColor, (id)[UIColor clearColor].CGColor];
@@ -497,6 +502,10 @@
 
 - (void)checkShadows:(NSUInteger)selectedIndex {
 
+    if(self.numberOfItems == 1) {
+        return;
+    }
+    
     if(!_shadowsEnabled) {
         return;
     }
