@@ -6,7 +6,13 @@ For Android, developers can use default Android controls.
 
 For iOS, [FPT Software](http://www.fpt-software.com/) built those controls to bring Google material design to iOS application. This is the most complete material design controls for iOS so far.
 
-Please feel free to make any pull requests.
+# Xamarin Binding Process (os x)
+
+1. Go to MaterialControls folder
+2. Open terminal inside of it.
+3. Run ./liposcript (will compile every supported platform)
+4. Go to Desktop/MaterialControls get the libMaterialControls.a and copy it to MaterialControls.Xamarin.Binding
+5. Open Xamarin Project and build the library binding.
 
 Component List
 -----
