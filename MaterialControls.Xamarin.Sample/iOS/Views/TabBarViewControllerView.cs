@@ -3,10 +3,7 @@ using System;
 
 using Foundation;
 using UIKit;
-using MaterialControls;
-using System.Linq;
 using MaterialControls.Xamarin.Sample.Core.ViewModels;
-using System.Threading.Tasks;
 
 namespace MaterialControls.Xamarin.Sample.iOS.Views
 {
@@ -20,13 +17,15 @@ namespace MaterialControls.Xamarin.Sample.iOS.Views
             Delegate = new TabBarViewControllerDelegate();
             TabBarViewController = new MDTabBarViewController(Delegate);
 
-            TabBarViewController.TabBar.Height = 200;
+            TabBarViewController.TabBar.Height = 50;
             TabBarViewController.TabBar.IndicatorHeight = 1;
             TabBarViewController.TabBar.ShadowColor = UIColor.Yellow;
             TabBarViewController.TabBar.ShadowsEnabled = true;
             TabBarViewController.SetItems(new NSObject[] {
                 new NSString ("FIRST TAB"),
-
+                new NSString ("SECOND TAB"),
+                new NSString ("THIRD TAB"),
+                new NSString ("FORT TAB")
             });
 
         }
@@ -39,7 +38,7 @@ namespace MaterialControls.Xamarin.Sample.iOS.Views
             // Release any cached data, images, etc that aren't in use.
         }
 
-        public override async void ViewDidLoad()
+        public override void ViewDidLoad()
         {
             base.ViewDidLoad();
 
@@ -51,14 +50,11 @@ namespace MaterialControls.Xamarin.Sample.iOS.Views
             View.AddConstraints(NSLayoutConstraint.FromVisualFormat("V:[TopLayoutGuide]-0-[controllerView]-0-[BottomLayoutGuide]", NSLayoutFormatOptions.DirectionLeadingToTrailing, null, viewsDictionary));
             View.AddConstraints(NSLayoutConstraint.FromVisualFormat("H:|-0-[controllerView]-0-|", NSLayoutFormatOptions.DirectionLeadingToTrailing, null, viewsDictionary));
 
-            //await Task.Delay(2000);
-
         }
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
             TabBarViewController.SetSelectedIndex((nuint)(TabBarViewController.TabBar.NumberOfItems - 1));
-
         }
     }
 
