@@ -481,7 +481,7 @@
 
 - (void)addShadows {
     
-    if(self.numberOfItems == 1) {
+    if(self.numberOfItems == 1 || shadowLeft.superlayer != nil || shadowRight.superlayer != nil) {
         return;
     }
     
@@ -490,7 +490,6 @@
     shadowLeft.colors = @[(id)self.shadowColor.CGColor, (id)[UIColor clearColor].CGColor];
     shadowLeft.startPoint = CGPointMake(0.0, 0.5);
     shadowLeft.endPoint = CGPointMake(1.0, 0.5);
-    //[self.layer addSublayer:shadowLeft];
     
     shadowRight = [CAGradientLayer layer];
     shadowRight.frame = CGRectMake(self.bounds.size.width - kMDShadowWidth, 0, kMDShadowWidth, self.bounds.size.height);
