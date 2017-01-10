@@ -1,0 +1,50 @@
+# Merge Script
+
+# 1
+# Set bash script to exit immediately if any commands fail.
+set -e
+
+# 2
+# Setup some constants for use later on.
+FRAMEWORK_NAME="MaterialControls"
+
+LIB_NAME="libMaterialControls.a"
+
+i386_LIB_NAME="i386libMaterialControls.a"
+x86_64_LIB_NAME="x86_64libMaterialControls.a"
+arm64_LIB_NAME="arm64libMaterialControls.a"
+armv7_LIB_NAME="armv7libMaterialControls.a"
+
+# 3
+# Clean bulild fodlers.
+rm -rf "build/"
+
+# 3
+# Remove folder on Desktop from previous run.
+rm -rf "${HOME}/Desktop/${FRAMEWORK_NAME}"
+mkdir "${HOME}/Desktop/${FRAMEWORK_NAME}"
+
+# 4
+# Build the framework for device and for simulator (using all needed architectures).
+
+xcodebuild -project MaterialControls.xcodeproj -target "${FRAMEWORK_NAME}" -sdk iphonesimulator -arch i386 -configuration Release clean build
+cp -r "build/Release-iphonesimulator/${LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}"
+mv "${HOME}/Desktop/${FRAMEWORK_NAME}/${LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}/${i386_LIB_NAME}"
+
+xcodebuild -project MaterialControls.xcodeproj -target "${FRAMEWORK_NAME}" -sdk iphonesimulator -arch x86_64 -configuration Release clean build
+cp -r "build/Release-iphonesimulator/${LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}"
+mv "${HOME}/Desktop/${FRAMEWORK_NAME}/${LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}/${x86_64_LIB_NAME}"
+
+xcodebuild -project MaterialControls.xcodeproj -target "${FRAMEWORK_NAME}" -sdk iphoneos -arch arm64 -configuration Release clean build
+cp -r "build/Release-iphoneos/${LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}"
+mv "${HOME}/Desktop/${FRAMEWORK_NAME}/${LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}/${arm64_LIB_NAME}"
+
+xcodebuild -project MaterialControls.xcodeproj -target "${FRAMEWORK_NAME}" -sdk iphoneos -arch armv7 -configuration Release clean build
+cp -r "build/Release-iphoneos/${LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}"
+mv "${HOME}/Desktop/${FRAMEWORK_NAME}/${LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}/${armv7_LIB_NAME}"
+
+# 5
+# Using lipo to join all the .a into a single .a with all platforms.
+lipo -create -output "${HOME}/Desktop/${FRAMEWORK_NAME}/${LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}/${i386_LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}/${x86_64_LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}/${arm64_LIB_NAME}" "${HOME}/Desktop/${FRAMEWORK_NAME}/${armv7_LIB_NAME}"
+
+
