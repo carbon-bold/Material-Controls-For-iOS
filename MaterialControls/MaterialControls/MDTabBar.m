@@ -477,6 +477,7 @@
   [self setIndicatorColor:[UIColor whiteColor]];
   [self setRippleColor:[UIColor whiteColor]];
   [self setShadowColor:[UIColor colorWithWhite:0.0f alpha:0.5f]];
+  [self setHorizontalInset: self.horizontalInset];
 }
 
 - (void)addShadows {
@@ -679,7 +680,7 @@
 - (void)setHorizontalInset:(CGFloat)horizontalInset;
 {
   _horizontalInset = horizontalInset;
-  [self setNeedsLayout];
+  [self layoutIfNeeded];
 }
 
 - (NSInteger)numberOfItems {

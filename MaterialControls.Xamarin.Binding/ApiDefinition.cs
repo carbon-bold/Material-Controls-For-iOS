@@ -623,6 +623,10 @@ namespace MaterialControls
         [Export("textColor")]
         UIColor TextColor { get; set; }
 
+        // @property (nonatomic) UIColor * normalTextColor;
+        [Export("normalTextColor")]
+        UIColor NormalTextColor { get; set; }
+
         // @property (nonatomic) UIColor * backgroundColor;
         [Export("backgroundColor")]
         UIColor BackgroundColor { get; set; }
@@ -642,6 +646,10 @@ namespace MaterialControls
         // @property (nonatomic) NSUInteger selectedIndex;
         [Export("selectedIndex")]
         nuint SelectedIndex { get; set; }
+
+        // @property (nonatomic, assign) CGFloat horizontalInset;
+        [Export("horizontalInset")]
+        float HorizontalInset { get; set; }
 
         // @property (nonatomic, weak) id<MDTabBarDelegate> delegate;
         [Export("delegate", ArgumentSemantic.Weak)]
