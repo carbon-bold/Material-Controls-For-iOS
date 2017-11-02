@@ -18,6 +18,9 @@ namespace MaterialControls.Xamarin.Sample.iOS.Views
             TabBarViewController = new MDTabBarViewController(Delegate);
 
             TabBarViewController.TabBar.Height = 50;
+            TabBarViewController.TabBar.HorizontalInset = 0;
+            TabBarViewController.TabBar.TextColor = UIColor.Purple;
+            TabBarViewController.TabBar.NormalTextColor = UIColor.Magenta;
             TabBarViewController.TabBar.IndicatorHeight = 1;
             TabBarViewController.TabBar.ShadowColor = UIColor.Yellow;
             TabBarViewController.TabBar.ShadowsEnabled = true;
